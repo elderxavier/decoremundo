@@ -1,0 +1,23 @@
+.ma-tabsproduct-contain {
+    clear: both;
+}
+.ma-tabs-title {
+    float: left;
+    width: 100%;
+    border-bottom: 2px solid #ddd;
+}
+.tabs-title {}
+.ma-tabs-title li {
+    float: left;
+    margin-left: 40px;
+    line-height: 32px;
+}
+.ma-tabs-title li.first {
+    margin-left: 0;
+    
+}
+
+.ma-tabs-content {
+    clear: both;
+    
+}

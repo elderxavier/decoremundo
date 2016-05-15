@@ -2,3 +2,4 @@ Nova pasta/*
 app/etc/local.xml
 app/etc/config.xml
 /.project
+/nbproject/private/

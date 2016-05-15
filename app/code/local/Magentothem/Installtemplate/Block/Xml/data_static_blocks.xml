@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<allureshop>
+    <blocks>
+        <block>
+            <title>Banner Static</title>
+            <identifier>home_banner_static</identifier>
+            <content>
+                    <![CDATA[<div class="banner-static-contain">
+<div class="home-banner-static row-fluid">
+<div class="banner-box banner-box1 span4"><a href="{{store direct_url="women.html"}}"><img src="{{media url="wysiwyg/banner-static1.jpg"}}" alt="" /></a></div>
+<div class="banner-box banner-box2 span4"><a href="{{store direct_url="men.html"}}"><img src="{{media url="wysiwyg/banner-static2.jpg"}}" alt="" /></a></div>
+<div class="banner-box banner-box3 span4"><a href="{{store direct_url="footwear.html"}}"><img src="{{media url="wysiwyg/banner-static3.jpg"}}" alt="" /></a></div>
+</div>
+</div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+        <block>
+            <title>Footer Static</title>
+            <identifier>footer_static</identifier>
+            <content>
+                      <![CDATA[
+                            <div class="f-col f-col1 span3">
+<div class="footer-static-title">
+<h3>INFORMATION</h3>
+</div>
+<div class="footer-static-content">
+<ul>
+<li class="first"><a href="{{store direct_url="about-magento-demo-store"}}">About Us</a></li>
+<li><a href="{{store direct_url="customer/account/"}}">Delivery Information</a></li>
+<li><a href="{{store direct_url="privacy-policy-cookie-restriction-mode"}}">Privacy Policy</a></li>
+<li class="last"><a href="#">Terms &amp; Condition</a></li>
+</ul>
+</div>
+</div>
+<div class="f-col f-col2 span3">
+<div class="footer-static-title">
+<h3>CUSTOMER SERVICE</h3>
+</div>
+<div class="footer-static-content row-fluid">
+<ul>
+<li class="first"><a href="{{store direct_url="contacts/"}}">Contact Us</a></li>
+<li><a href="{{store direct_url="sales/guest/form/"}}">orders and Returns</a></li>
+<li class="last"><a href="{{store direct_url="catalog/seo_sitemap/category/"}}">Site Map</a></li>
+</ul>
+</div>
+</div>
+<div class="f-col f-col3 span3">
+<div class="footer-static-title">
+<h3>EXTRAS</h3>
+</div>
+<div class="footer-static-content row-fluid">
+<ul>
+<li class="first"><a href="#">Brands</a></li>
+<li><a href="#">Gift Vouchers</a></li>
+<li><a href="#">Affiliates</a></li>
+<li class="last"><a href="#">Specials</a></li>
+</ul>
+</div>
+</div>
+<div class="f-col f-col4 span3">
+<div class="about-us">
+<div class="footer-static-title">
+<h3>MY ACCOUNT</h3>
+</div>
+<div class="footer-static-content row-fluid">
+<ul>
+<li class="first"><a href="{{store direct_url="customer/account/"}}">My Account</a></li>
+<li><a href="{{store direct_url="sales/order/history/"}}">Order History</a></li>
+<li><a href="{{store direct_url="wishlist/"}}">Wish List</a></li>
+<li class="last"><a href="#">Newsletter</a></li>
+</ul>
+</div>
+</div>
+</div>
+                        ]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+        <block>
+            <title>Banner Left</title>
+            <identifier>banner_left</identifier>
+            <content>
+                      <![CDATA[<div class="block block-banner-left"><a href="#"><img src="{{media url="wysiwyg/banner_left.jpg"}}" alt="" /></a></div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+        <block>
+            <title>Static Sub Menu Col Right</title>
+            <identifier>pt_menu_idcat_6_right</identifier>
+            <content>
+                      <![CDATA[<div class="sub-menu-col4"><a href="#"><img src="{{media url="wysiwyg/custom_menu1.jpg"}}" alt="" /></a></div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+
+        <block>
+            <title>Static Sub Menu Bottom</title>
+            <identifier>pt_menu_idcat_4</identifier>
+            <content>
+                      <![CDATA[<div class="custom-menu-bottom">
+<div class="row-fluid">
+<div class="span6"><a href="#"><img src="{{media url="wysiwyg/custom_menu_bottom1.jpg"}}" alt="" /></a></div>
+<div class="span6"><a href="#"><img src="{{media url="wysiwyg/custom_menu_bottom2.jpg"}}" alt="" /></a></div>
+</div>
+</div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+
+
+
+        <block>
+            <title>Custom Menu</title>
+            <identifier>pt_item_menu_custom_menu</identifier>
+            <content>
+                   <![CDATA[
+                   <div class="static_block_custom_menu">
+<div class="static-menu-img"><a href="#"><img src="{{media url="wysiwyg/custom_menu2.jpg"}}" alt="" /></a></div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio sapien, tempor eget facilisis eget, dapibus vitae mi. Mauris auctor ultricies eros sit amet bibendum. Etiam dapibus erat sit amet nunc tincidunt ullamcorper. Integer quis tellus ut lorem imperdiet luctus sit amet nec felis. Sed in ipsum dolor, at dignissim sem. Fusce vestibulum, enim nec egestas dapibus, massa nulla convallis diam, id sodales tortor turpis nec ligula. Nunc bibendum enim id est malesuada sollicitudin. Fusce non ipsum ut augue rhoncus aliquet quis et mi. Suspendisse volutpat nunc eget metus rutrum eu venenatis nibh hendrerit.</p>
+</div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+
+        <block>
+            <title>banner static bottom</title>
+            <identifier>banner_static_bottom</identifier>
+            <content>
+                 <![CDATA[
+                    <div class="banner-static-bottom-container">
+<div class="home-banner-bottom row-fluid">
+<div class="banner-box banner-box1 span4"><a href="{{store direct_url="jewelry.html"}}"><img src="{{media url="wysiwyg/banner-static4.jpg"}}" alt="" /></a></div>
+<div class="banner-box banner-box2 span4"><a href="{{store direct_url="accessories.html"}}"><img src="{{media url="wysiwyg/banner-static5.jpg"}}" alt="" /></a></div>
+<div class="banner-box banner-box3 span4"><a href="{{store direct_url="electronics.html"}}"><img src="{{media url="wysiwyg/banner-static6.jpg"}}" alt="" /></a></div>
+</div>
+</div>
+				]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+
+
+
+        <block>
+            <title>footer static 2</title>
+            <identifier>footer_static2</identifier>
+            <content>
+                 <![CDATA[<div class="f-col f-col1 span3">
+<div class="footer-static-title">
+<h3>ABOUT US</h3>
+</div>
+<div class="footer-static-content">
+<p>In vitae massa iaculis, fringilla felis at, posuere nulla. Integer blandit ligula dolor, nec laoreet risus eleifend vel. Nunc consectetur imperdiet magna quis consequat. Integer rutrum ligula non purus tristique, sit amet gravida neque vulputate. Vivamus pretium massa in lacus malesuada blandit sed ut massa.</p>
+</div>
+</div>
+<div class="f-col f-col2 span3">
+<div class="footer-static-title">
+<h3>CONTACT US</h3>
+</div>
+<div class="footer-static-content row-fluid">
+<div class="phone">0123.456.789</div>
+<div class="mail">plazathemes@gmail.com</div>
+<div class="skype">magentothemes</div>
+</div>
+</div>
+<div class="f-col f-col3 span3">
+<div class="footer-static-title">
+<h3>THEME FEATURES</h3>
+</div>
+<div class="footer-static-content row-fluid">
+<ul>
+<li class="first"><a href="http://usthemes.com/">Theme Features</a></li>
+<li><a href="#">Typography</a></li>
+<li><a href="#">Sample Link</a></li>
+<li><a href="#">Meat Our Best Partners</a></li>
+<li><a href="#">Our Other Projects</a></li>
+<li><a href="#">One Click To Join Us</a></li>
+<li><a href="#">Follow Us On Twitter</a></li>
+<li class="last"><a href="http://usthemes.com/">Magento Themes</a></li>
+</ul>
+</div>
+</div>
+<div class="f-col f-col4 span3">
+<div class="footer-static-title">
+<h3>KEY FEATURES</h3>
+</div>
+<div class="footer-static-content row-fluid">
+<div class="color">Unlimited colors, dozens of customizable elements</div>
+<div class="responsive">Customizable responsive layout based on fluid grid</div>
+<div class="display">50+ placeholders to display custom content</div>
+</div>
+</div>]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+
+        <block>
+            <title>footer static 3</title>
+            <identifier>footer_static3</identifier>
+            <content>
+                 <![CDATA[
+                 <div class="footer-static3"><a class="wireless" href="#">wireless</a> <a class="in" href="#">in</a> <a class="v" href="#">v</a> <a class="twitter" href="#">twitter</a> <a class="facebook" href="#">facebook</a></div>
+                 ]]>
+            </content>
+            <is_active>1</is_active>
+        </block>
+
+    </blocks>
+
+</allureshop>
+
