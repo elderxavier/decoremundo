@@ -27,42 +27,44 @@
  * @var Mage_Page_Block_Html_Header $this
  */
 ?>
-<div class="ma-header-container">
-    <div class="toplink">
-        <div class="container">
-            <div class="row-fluid">
-                <div class="span4 lang-currency">
-                    <?php echo $this->getChildHtml('store_language') ?>
-                    <?php echo $this->getChildHtml('currency') ?>
-                    <p class="welcome-msg"><?php echo $this->getWelcome() ?> <?php echo $this->getAdditionalHtml() ?></p>
-                </div>
-                <div class="top-link span8">
-                    <?php echo $this->getChildHtml('topLinks') ?>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="ma-header-container">   
     <div class="container">
         <div class="header">
             <div class="header-content">
-                <div class="row-fluid">
-                    <div class="span4">
-                        <?php if ($this->getIsHomePage()):?>
-                        <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
-                        <?php else:?>
-                        <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
-                        <?php endif?>
+                <div class="row">
+                    <div class="col-md-4 .col-sm-12 col-xs-12">                        
                     </div>
-                    <div class="span8">
-                        <div class="quick-access">
-                            <div class="top-cart-wrapper">
-                                <div class="top-cart-contain">
-                                    <?php echo $this->getChildHtml('topCart') ?>
-                                </div>
+                    <div class="col-md-4 .col-sm-12 col-xs-12 col-md-offset-0 logo-container">
+                        <?php if ($this->getIsHomePage()): ?>
+                            <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+                        <?php else: ?>
+                            <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+                        <?php endif ?>
+                    </div>                    
+                    <div class="col-md-4 .col-sm-12 col-xs-12">
+                        <div class="col-md-6 .col-sm-6 col-xs-6">
+                            <div class="dropdown ">
+                                <a href="#" class="dropbtn account">Minha Conta</a>
+                                <ul class="dropdown-content">
+                                    <li><a href="#" id="account-enter">Entrar</a></li>
+                                    <li><a href="#" id="account-myaccount">Minha Conta</a></li>
+                                    <li><a href="#" id="account-purchase">Meus Pedidos</a></li>
+                                    <li><a href="#" id="account-wishlist">Minha Lista de Desejos</a></li>
+                                </ul>
                             </div>
+                        </div>
+                        <div class="col-md-6 .col-sm-6 col-xs-6">
+                            <div class="dropdown">
+                                <a href="#" class="dropbtn cart-account">Carrinho</a>
+                                <ul class="dropdown-content">
+                                    <li><?php echo $this->getChildHtml('topCart') ?></li>
+                                </ul>                                
+                            </div>                            
+                        </div>
+                         <div class="col-md-4 .col-sm-12 col-xs-12 search-container">
                             <?php echo $this->getChildHtml('topSearch') ?>
                         </div>
-                    </div>
+                    </div>                    
                 </div>
             </div>
             <?php echo $this->getChildHtml('topContainer'); ?>
