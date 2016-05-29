@@ -516,7 +516,7 @@ tr.summary-details-excluded { font-style:italic; }
 .header .quick-access { text-align: right; }
 .welcome-msg { margin:0; text-align: left; padding: 10px; display: none }
 .header .welcome-msg a { color:#ebbc58; }
-.header .form-search { border-bottom: 1px solid #d5d5d5; width:253px; height:23px; clear: both; }
+.header .form-search { border: 1px solid #d5d5d5; width:253px; height:30px; clear: both; padding: 5px; border-radius: 5px }
 .header .form-search label { float:left; width:0; height:21px; text-align:left; text-indent:-999em; overflow:hidden; }
 .header .form-search input.input-text { float:left; border: none; box-shadow: none; width:192px; height: 17px; text-transform: capitalize; font-family: Oxygen-Bold; color: #929191;}
 .header .form-search button.button { float: right; height: 20px; }
@@ -1800,7 +1800,7 @@ tr.summary-details-excluded { font-style:italic; }
 /********** < Navigation */
 .ma-nav-container { }
 .top-nav-content{background: #97999c; width: 100%; border-bottom: 1px solid #7b7b7d; border-top: 1px solid #7b7b7d }
-#nav { margin:0 auto; font-size:12px; background: none; display: inline-block }
+#nav { margin:5px auto; font-size:12px; background: none; display: inline-block }
 /* All Levels */ /* Style consistent throughout all nav levels */
 #nav li { position:relative; text-align:left; }
 #nav li.last {  }
@@ -2275,7 +2275,7 @@ tr.summary-details-excluded { font-style:italic; }
 .dropdown-content #account-purchase{ background: url(../images/checkout_orange.png) no-repeat scroll 0 12px; transition: all 0.2s ease-in }
 .dropdown-content #account-purchase:hover{ background: url(../images/checkout_orange.png) no-repeat scroll 0 -139px}
 .dropdown-content #account-wishlist{ background: url(../images/wishlist_orange.png) no-repeat scroll 0 12px; transition: all 0.2s ease-in }
-.dropdown-content #account-wishlist:hover{ background: url(../images/wishlist_orange.png) no-repeat scroll 0 -90px}
+.dropdown-content #account-wishlist:hover{ background: url(../images/wishlist_orange.png) no-repeat scroll 0 -90px}s
 .ma-nav-mobile-container, ma-mobilemenu{transition: all 0.2s ease-in}
 .dropbtn.cart-account{background: url(../images/shopping_cart_orange.png) no-repeat scroll 0 -97px; text-decoration: none !important; padding: 10px 21px;text-transform: uppercase;}
 .dropdown-content .top-cart-title .count .price{ font: 12px/1.55 Oxygen-Bold}

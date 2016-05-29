@@ -25,9 +25,10 @@
  */
 /**
  * @var Mage_Page_Block_Html_Header $this
+ * 
  */
 ?>
-<div class="ma-header-container">   
+<div class="ma-header-container">     
     <div class="container">
         <div class="header">
             <div class="header-content">
@@ -46,22 +47,26 @@
                             <div class="dropdown ">
                                 <a href="#" class="dropbtn account">Minha Conta</a>
                                 <ul class="dropdown-content">
-                                    <li><a href="#" id="account-enter">Entrar</a></li>
-                                    <li><a href="#" id="account-myaccount">Minha Conta</a></li>
-                                    <li><a href="#" id="account-purchase">Meus Pedidos</a></li>
-                                    <li><a href="#" id="account-wishlist">Minha Lista de Desejos</a></li>
+                                    <?php if ($this->helper('customer')->isLoggedIn()) : ?>
+                                        <li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) ?>customer/account/logout/" id="account-enter">Sair</a></li>                                        
+                                    <?php else: ?>
+                                        <li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) ?>customer/account/" id="account-enter">Entrar</a></li>   
+                                    <?php endif; ?>                                    
+                                    <li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) ?>customer/account/index/" id="account-myaccount">Minha Conta</a></li>
+                                    <li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) ?>sales/order/history/" id="account-purchase">Meus Pedidos</a></li>
+                                    <li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) ?>wishlist/" id="account-wishlist">Minha Lista de Desejos</a></li>                                    
                                 </ul>
                             </div>
                         </div>
                         <div class="col-md-6 .col-sm-6 col-xs-6">
                             <div class="dropdown">
-                                <a href="#" class="dropbtn cart-account">Carrinho</a>
+                                <a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) ?>checkout/cart/" class="dropbtn cart-account">Carrinho</a>
                                 <ul class="dropdown-content">
                                     <li><?php echo $this->getChildHtml('topCart') ?></li>
                                 </ul>                                
                             </div>                            
                         </div>
-                         <div class="col-md-4 .col-sm-12 col-xs-12 search-container">
+                        <div class="col-md-4 .col-sm-12 col-xs-12 search-container">
                             <?php echo $this->getChildHtml('topSearch') ?>
                         </div>
                     </div>                    
