@@ -3,11 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/decoremundo/app/locale/en_US/Mage_Catalog.csv</file>
-            <file>file:/C:/xampp/htdocs/decoremundo/app/locale/pt_BR/Mage_Catalog.csv</file>
-            <file>file:/C:/xampp/htdocs/decoremundo/skin/frontend/default/ma_alexis/css/styles_purple.css</file>
-            <file>file:/C:/xampp/htdocs/decoremundo/app/design/frontend/default/ma_alexis/template/catalog/navigation/top.phtml</file>
-            <file>file:/C:/xampp/htdocs/decoremundo/app/design/frontend/default/ma_alexis/template/page/html/header.phtml</file>
+            <file>file:/C:/xampp/htdocs/decoremundo/app/design/frontend/base/default/layout/page.xml</file>
+            <file>file:/C:/xampp/htdocs/decoremundo/app/design/frontend/rwd/default/layout/catalog.xml</file>
+            <file>file:/C:/xampp/htdocs/decoremundo/app/design/frontend/default/ma_alexis/layout/catalog.xml</file>
         </group>
     </open-files>
 </project-private>

@@ -81,8 +81,6 @@ dd { margin: 0; }
 .no-bg        { background:none !important; }
 /* ======================================================================================= */
 /* Layout ================================================================================ */
-.ma-wrapper { }
-.ma-page {}
 .page-print { background:#fff; padding:25px 30px; text-align:left; }
 .page-empty { background:#fff; padding:20px; text-align:left; }
 .page-popup { background:#fff; padding:25px 30px; text-align:left; }
@@ -1387,7 +1385,7 @@ tr.summary-details-excluded { font-style:italic; }
 .opc .buttons-set.disabled button.button { display:none; }
 .opc .buttons-set .please-wait { height:21px; line-height:21px; }
 .opc .ul { list-style:disc outside; padding-left:18px; }
-.opc { position:relative; }
+.opc { position:relative; padding-left: 0 }
 .opc li.section { margin: 5px 0 0; }
 .opc .step-title { border: 1px solid #ababab; background:#fff; padding:4px 8px 6px; text-align:right; }
 .opc .step-title .number { float:left; padding:0 4px; margin:0 5px 0 0; font-size: 14px; color:#999; }
