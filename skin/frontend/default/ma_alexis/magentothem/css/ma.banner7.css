@@ -24,7 +24,7 @@
 *********************************/ 
 .ma-banner7-container .flexslider {margin: 0; padding: 0;}
 .ma-banner7-container .flexslider .slides > li {display: none; -webkit-backface-visibility: hidden; position: relative; } /* Hide the slides before the JS is loaded. Avoids image jumping */
-.ma-banner7-container .flexslider .slides img {width: 100%; display: block; position: relative}
+.ma-banner7-container .flexslider .slides img {width: 100%; display: block;}
 .ma-banner7-container .flex-pauseplay span {text-transform: capitalize;}
 
 /* Clearfix for the .slides element */
@@ -43,7 +43,7 @@ html[xmlns] .ma-banner7-container .slides {display: block;}
 .ma-banner7-container .flexslider { position: relative; zoom: 1; min-height: 50px; }
 .ma-banner7-container .flex-viewport {max-height: 2000px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
 .ma-banner7-container .loading .flex-viewport {max-height: 300px;}
-.ma-banner7-container .flexslider .slides {zoom: 1; width: 90%; margin: 0 auto; max-height: 500px}
+.ma-banner7-container .flexslider .slides {zoom: 1;}
 
 .ma-banner7-container .carousel li {margin-right: 5px}
 

@@ -33,37 +33,41 @@
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
 <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if (IE 9)]><html class="no-js ie9" lang="pt-br"><![endif]-->
-<!--[if gt IE 8]><!--> <html lang="pt-br"> <!--<![endif]-->
-<head>
-<?php echo $this->getChildHtml('head') ?>
-</head>
-<body<?php echo $this->getBodyClass()?' class="'.$this->getBodyClass().'"':'' ?>>
-<?php echo $this->getChildHtml('after_body_start') ?>
-<div class="ma-wrapper">
-    <?php echo $this->getChildHtml('global_notices') ?>
-    <div class="ma-page">
-        <?php echo $this->getChildHtml('header') ?>
-        <div class="ma-main-container col1-layout">
-            <?php echo $this->getChildHtml('ma_banner7') ?>
-            <div class="container">
-                <div class="main">
-                    <div class="main-inner">
-                        <?php echo $this->getChildHtml('ma_banner') ?>
-                        <div class="col-main">
-                            <?php echo $this->getChildHtml('breadcrumbs') ?>
-                            <?php echo $this->getChildHtml('global_messages') ?>
-                            <?php echo $this->getChildHtml('content') ?>
+<!--[if (IE 9)]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="<?php echo $this->getLang() ?>"> <!--<![endif]-->
+    <head>
+        <?php echo $this->getChildHtml('head') ?>    
+    </head>
+    <body<?php echo $this->getBodyClass() ? ' class="' . $this->getBodyClass() . '"' : '' ?>>
+        <?php echo $this->getChildHtml('after_body_start') ?>
+        <div class="ma-wrapper">
+            <?php echo $this->getChildHtml('global_notices') ?> 
+            <div class="ma-page">
+                <header>
+                    <?php echo $this->getChildHtml('header') ?>
+                </header>                
+                <div class="ma-main-container col1-layout">
+                    <?php echo $this->getChildHtml('ma_banner7') ?>
+                    <div class="container">
+                        <div class="main">
+                            <div class="main-inner">
+                                <?php echo $this->getChildHtml('ma_banner') ?>
+                                <div class="col-main">
+                                    <?php echo $this->getChildHtml('breadcrumbs') ?>
+                                    <?php echo $this->getChildHtml('global_messages') ?>
+                                    <?php echo $this->getChildHtml('content') ?>
+                                </div>
+                                <?php echo $this->getChildHtml('banner_static_bottom') ?>
+                            </div>
                         </div>
-                        <?php echo $this->getChildHtml('banner_static_bottom') ?>
                     </div>
                 </div>
+                <footer>
+                    <?php echo $this->getChildHtml('footer') ?>
+                    <?php echo $this->getChildHtml('before_body_end') ?>
+                </footer>
             </div>
         </div>
-        <?php echo $this->getChildHtml('footer') ?>
-        <?php echo $this->getChildHtml('before_body_end') ?>
-    </div>
-</div>
-<?php echo $this->getAbsoluteFooter() ?>
-</body>
+        <?php echo $this->getAbsoluteFooter() ?>    
+    </body>
 </html>

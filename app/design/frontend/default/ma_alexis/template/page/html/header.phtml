@@ -25,57 +25,63 @@
  */
 /**
  * @var Mage_Page_Block_Html_Header $this
- * 
  */
 ?>
-<header>
-    <div class="ma-header-container">     
+
+<div class="ma-header-container">
+    <div class="toplink">
         <div class="container">
-            <div class="header">
-                <div class="header-content">
-                    <div class="row">
-                        <div class="col-md-4 .col-sm-12 col-xs-12">                        
-                        </div>
-                        <div class="col-md-4 .col-sm-12 col-xs-12 col-md-offset-0 logo-container">
-                            <?php if ($this->getIsHomePage()): ?>
-                                <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
-                            <?php else: ?>
-                                <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
-                            <?php endif ?>
-                        </div>                    
-                        <div class="col-md-4 .col-sm-12 col-xs-12">
-                            <div class="col-md-6 .col-sm-6 col-xs-6">
-                                <div class="dropdown ">
-                                    <a href="#" class="dropbtn account">Minha Conta</a>
-                                    <ul class="dropdown-content">
-                                        <?php if ($this->helper('customer')->isLoggedIn()) : ?>
-                                            <li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) ?>customer/account/logout/" id="account-enter">Sair</a></li>                                        
-                                        <?php else: ?>
-                                            <li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) ?>customer/account/" id="account-enter">Entrar</a></li>   
-                                        <?php endif; ?>                                    
-                                        <li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) ?>customer/account/index/" id="account-myaccount">Minha Conta</a></li>
-                                        <li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) ?>sales/order/history/" id="account-purchase">Meus Pedidos</a></li>
-                                        <li><a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) ?>wishlist/" id="account-wishlist">Minha Lista de Desejos</a></li>                                    
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-6 .col-sm-6 col-xs-6">
-                                <div class="dropdown">
-                                    <a href="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_WEB) ?>checkout/cart/" class="dropbtn cart-account">Carrinho</a>
-                                    <ul class="dropdown-content">
-                                        <li><?php echo $this->getChildHtml('topCart') ?></li>
-                                    </ul>                                
-                                </div>                            
-                            </div>
-                            <div class="col-md-4 .col-sm-12 col-xs-12 search-container">
-                                <?php echo $this->getChildHtml('topSearch') ?>
-                            </div>
-                        </div>                    
-                    </div>
+            <div class="row">
+                <div class="col-md-5 hidden-xs hidden-sm">
+                    <span class="welcome-message">EXCELÊNCIA E DESIGN</span>            </div>
+                <div class="col-md-7">
+                    <ul class="nav navbar-nav navbar-right sm">
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" rel="nofollow" class="dropdown-toggle has-submenu">
+                                <i class="fa fa-heart-o"></i>
+                                <span class="topnav-label hidden-xs">Redes Sociais</span>
+                            </a>
+                            <ul class="dropdown-menu topnav-social-dropdown">
+                                <li><a href="https://www.facebook.com/" target="_blank" rel="nofollow">Facebook</a></li>
+                                <li><a href="https://www.youtube.com/" rel="nofollow" target="_blank" >Youtube</a></li>
+                                <li><a href="https://www.instagram.com/" rel="nofollow" target="_blank" >Instagram</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="javascript:void(0)" rel="nofollow" class="dropdown-toggle has-submenu">
+                                <i class="fa fa-search"></i>
+                                <span class="topnav-label hidden-xs">Buscar</span>
+                            </a>
+                            <ul class="dropdown-menu topnav-search-dropdown sm-nowrap" id="sm-14607867625635825-4" role="group" aria-hidden="true" aria-labelledby="sm-14607867625635825-3" aria-expanded="false" style="width: auto; top: auto; left: 0px; margin-left: -146.047px; margin-top: 0px; display: none; min-width: 10em; max-width: 20em;">
+                                <li>
+                                    <?php echo $this->getChildHtml('topSearch') ?>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-                <?php echo $this->getChildHtml('topContainer'); ?>
             </div>
         </div>
     </div>
-    <?php echo $this->getChildHtml('topMenu') ?>
-</header>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <div class="row-fluid">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <?php if ($this->getIsHomePage()): ?>
+                            <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+                        <?php else: ?>
+                            <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+                        <?php endif ?>
+                    </div>
+                    <div class="col-md-8 col-sm-12 col-xs-12">
+                        <?php echo $this->getChildHtml('topMenu') ?>
+                    </div>
+                </div>                
+            </div>
+            <?php echo $this->getChildHtml('topContainer'); ?>
+        </div>
+    </div>
+</div>
+
