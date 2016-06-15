@@ -8,13 +8,17 @@ jQuery(function ($) {
     };
     PAGE.header = function () {
         $(document).scroll(function () {
-            if ($(window).scrollTop() > 42) {
-                $('.ma-header-container').addClass('activate');
-            } else {
+            if (window.innerWidth > 800) {
+                if ($(window).scrollTop() > 42) {
+                    $('.ma-header-container').addClass('activate');
+                } else {
+                    $('.ma-header-container').removeClass('activate');
+                }
+            }else{
                 $('.ma-header-container').removeClass('activate');
             }
         });
-     };
+    };
 
 
     PAGE.preLoader = function () {
